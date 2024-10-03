@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrição Alimentar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#consultar-alimentos">Consultar Alimentos</a></li>
+                <li><a href="#nutricionista-parceiro">Nutricionista Parceiro</a></li>
+                <li><a href="#info-detalhada">Calculadora de macros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Início -->
+    <section id="inicio">
+        <h1>Nutrição Alimentar</h1>
+        <p>Aqui você pode consultar informações nutricionais, entrar em contato com um nutricionista parceiro para agendar uma consulta e obter sugestões de pratos personalizados.</p>
+    </section>
+
+    <!-- Seção Consultar Alimentos -->
+    <section id="consultar-alimentos">
+        <h2>Consultar Alimentos</h2>
+        <input type="text" id="search" placeholder="Digite o nome de um alimento...">
+        <div id="results"></div>
+    </section>
+
+    <!-- Seção Nutricionista Parceiro -->
+    <section id="nutricionista-parceiro">
+        <h2>Nutricionista Parceiro</h2>
+        <p>Entre em contato com nosso nutricionista parceiro:</p>
+        <p><strong>Nome:</strong> Dr. João Silva</p>
+        <p><strong>Telefone:</strong> (11) 1234-5678</p>
+        <p><strong>Email:</strong> <a href="mailto:joao.silva@nutri.com">joao.silva@nutri.com</a></p>
+    </section>
+
+    <!-- Seção Calculadora de Macronutrientes -->
+    <section id="info-detalhada">
+        <div id="macro-calculator">
+            <h2>Calculadora de Macronutrientes</h2>
+            <form id="macro-form">
+                <label for="calorias">Calorias diárias desejadas:</label>
+                <input type="number" id="calorias" required>
+    
+                <label for="percent-proteinas">Percentual de Proteínas:</label>
+                <input type="number" id="percent-proteinas" value="20" required>
+    
+                <label for="percent-carboidratos">Percentual de Carboidratos:</label>
+                <input type="number" id="percent-carboidratos" value="50" required>
+    
+                <label for="percent-lipidios">Percentual de Lipídios:</label>
+                <input type="number" id="percent-lipidios" value="30" required>
+    
+                <button type="submit">Calcular</button>
+            </form>
+    
+            <div id="macro-results"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Sobre o Site</h3>
+            <p>Este site fornece informações nutricionais e ferramentas para auxiliar na sua alimentação e saúde.</p>
+            <h4>Contato</h4>
+            <div class="contact-section">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:gab_matheus@hotmail.com">gab_matheus@hotmail.com</a></p>
+            </div>
+            <div class="link-form">
+                <h4>Formulário</h4>
+                <p><a href="https://h2n4t1rc.forms.app/feedback-formulario-site-nutricional" target="_blank">Responda nosso formulário para nos ajudar a melhorar o site</a></p>
+            </div>
+            <h4>Redes Sociais</h4>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/oliveiragm/" target="_blank">LinkedIn</a></p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/GabMatheus" target="_blank">github.com/GabMatheus</a></p>
+            <p class="footer-copy">&copy; 2024 Gabriel Matheus Oliveira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

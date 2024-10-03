@@ -1,0 +1,233 @@
+/* Estilo básico do corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Título principal */
+h1 {
+    color: #34495e;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Campo de busca */
+#search {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    font-size: 1rem;
+    margin: 0 auto 20px auto;
+    display: block;
+    border: 1px solid #dcdde1;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#search:focus {
+    outline: none;
+    border-color: #1abc9c;
+    box-shadow: 0 6px 12px rgba(26, 188, 156, 0.3);
+}
+
+/* Container dos resultados */
+#results {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Cartão de informações sobre o alimento */
+.food-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.food-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Título e textos das informações nutricionais */
+.food-info h3 {
+    margin-bottom: 15px;
+    color: #16a085;
+    font-size: 1.5rem;
+}
+
+.food-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.food-info strong {
+    color: #2980b9;
+}
+
+/* Mensagem de "nenhum alimento encontrado" */
+#results p {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #search {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .food-info {
+        padding: 15px;
+    }
+
+    .food-info h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Cabeçalho fixo com navegação */
+header {
+    background-color: #16a085;
+    padding: 10px 0;
+    position: fixed;
+    margin-left: -245px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #1abc9c;
+}
+
+section {
+    padding: 100px 20px; /* Ajuste de padding para compensar o cabeçalho fixo */
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #34495e;
+}
+
+#macro-calculator {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+#macro-calculator label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#macro-calculator input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#macro-calculator button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#macro-calculator button:hover {
+    background-color: #2980b9;
+}
+
+#macro-results {
+    margin-top: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+}
+
+.content {
+    flex: 1; /* Faz com que a seção de conteúdo ocupe o espaço disponível */
+    padding: 20px;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #16a085; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 0; /* Espaçamento interno */
+    width: 1349px; /* Garante que o rodapé ocupe 100% da largura */
+    margin-bottom: -250px;
+    position: relative; /* Permite que o rodapé se mova com o conteúdo */
+    margin-top: auto; /* Empurra o rodapé para a parte inferior da tela quando o conteúdo é menor */
+    margin-left: -245px;
+}
+
+.footer-content {
+    margin: 0 auto; /* Centraliza o conteúdo */
+    font-size: 0.9em; /* Tamanho menor da fonte */
+    text-align: center; /* Centraliza todo o conteúdo */
+    margin-left: 15px;
+}
+
+.footer-content h3,
+.footer-content h4 {
+    text-align: center; /* Centraliza os títulos h3 e h4 */
+}
+
+.footer-copy {
+    margin-top: 280px; /* Define a margem superior */
+    text-align: center; /* Centraliza o texto, se necessário */
+}
+
+.footer-content p {
+    margin: 5px 0; /* Margem opcional para espaçamento */
+}
