@@ -231,3 +231,28 @@ body {
 .footer-content p {
     margin: 5px 0; /* Margem opcional para espaçamento */
 }
+
+#inicio {
+    text-align: left;
+    font-size: 0.9em;
+    position: relative; /* ou absolute, dependendo do efeito desejado */
+    left: 120px; /* Ajuste horizontal */
+}
+
+#inicio h1 {
+    text-align: center;
+    position: relative;
+    margin-left: -250px;
+}
+
+.logo {
+    width: 90px; /* Define a largura */
+    height: auto; /* Mantém a proporção */
+    margin-right: 30px; /* Espaçamento entre a logo e a navegação */
+    margin-left: 48px;
+    margin-top: -10px;
+    display: inline-block; /* Mantém a logo na mesma linha que os itens do menu */
+    vertical-align: middle; /* Alinha verticalmente no meio */
+    position: absolute;
+
+}
