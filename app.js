@@ -108,3 +108,23 @@ document.getElementById('macro-form').addEventListener('submit', function(e) {
         <p><strong>Lipídios:</strong> ${lipidios.toFixed(2)}g</p>
     `;
 });
+
+//-----------------------------------//
+
+const navLinks = document.querySelectorAll('nav ul li a');
+
+// Adiciona um evento de clique a cada link
+navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault(); // Previne o comportamento padrão do link
+
+        const targetId = this.getAttribute('href'); // Obtém o ID da seção de destino
+        const targetSection = document.querySelector(targetId); // Seleciona a seção de destino
+
+        // Rolagem suave até a seção de destino
+        targetSection.scrollIntoView({
+            behavior: 'smooth', // Comportamento de rolagem suave
+            block: 'start' // Alinha a seção ao topo
+        });
+    });
+});

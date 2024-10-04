@@ -17,6 +17,13 @@ h1 {
     margin-bottom: 40px;
 }
 
+.separator {
+    height: 1px; /* Altura da linha */
+    background-color: #dcdde1; /* Cor da linha */
+    margin: 30px 0; /* Margem acima e abaixo da linha */
+    width: 100%; /* Largura total da seção */
+}
+
 /* Campo de busca */
 #search {
     width: 100%;
@@ -139,6 +146,7 @@ nav ul li a:hover {
 
 section {
     padding: 100px 20px; /* Ajuste de padding para compensar o cabeçalho fixo */
+    margin-bottom: 50px; /* Espaço entre seções */
 }
 
 section h2 {
@@ -233,17 +241,40 @@ body {
 }
 
 #inicio {
-    text-align: left;
-    font-size: 0.9em;
-    position: relative; /* ou absolute, dependendo do efeito desejado */
-    left: 120px; /* Ajuste horizontal */
+    display: flex; /* Usando Flexbox para alinhar a imagem e o texto lado a lado */
+    align-items: flex-start; /* Alinha os itens no topo */
+    position: relative; /* Para usar o position absoluto na imagem e texto */
+}
+
+#inicio img {
+    width: 400px; /* Tamanho da imagem */
+    height: 400px; /* Altura da imagem */
+    margin-left: -190px; /* Ajusta a posição horizontal da imagem */
+    margin-top: -40px; /* Ajusta a posição vertical da imagem */
+    position: absolute; /* Faz a imagem sair do fluxo do documento */
+}
+
+#inicio .texto {
+    flex: 1; /* O texto ocupará o restante do espaço ao lado da imagem */
+    margin-left: 220px; /* Deixa um espaço para a imagem à esquerda */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 50px; /* Ajusta a margem superior para dar espaço */
 }
 
 #inicio h1 {
-    text-align: center;
-    position: relative;
-    margin-left: -250px;
+    margin: 0;
+    font-size: 2rem;
+    color: #34495e;
+    margin-top: -70px;
 }
+
+#inicio p {
+    margin-top: 10px; /* Margem acima do parágrafo */
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+}
+
 
 .logo {
     width: 90px; /* Define a largura */

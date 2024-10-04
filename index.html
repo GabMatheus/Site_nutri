@@ -22,9 +22,15 @@
 
     <!-- Seção Início -->
     <section id="inicio">
-        <h1>Nutrição Alimentar</h1>
-        <p>Bem-vindo ao nosso site de nutrição alimentar, onde você pode consultar rapidamente as informações nutricionais de diversos alimentos e fazer escolhas mais saudáveis no seu dia a dia. Também oferecemos a opção de entrar em contato com um nutricionista parceiro para tirar dúvidas ou agendar uma consulta personalizada. Além disso, contamos com uma prática calculadora de macronutrientes para ajudar você a ajustar sua dieta de acordo com suas necessidades.</p>
+        <img src="/img/inicio.png" alt="inicio" class="img1">
+        <div class="texto">
+            <h1>A importância da nutrição atualmente</h1>
+            <p>A nutrição alimentar desempenha um papel fundamental na saúde e bem-estar das pessoas nos dias de hoje. Com a crescente disponibilidade de alimentos processados e a vida agitada, muitas pessoas negligenciam a qualidade da sua alimentação. Uma dieta equilibrada é essencial para prevenir doenças crônicas, como diabetes e hipertensão, além de contribuir para o fortalecimento do sistema imunológico. A nutrição adequada também está ligada ao aumento da energia e da produtividade, impactando positivamente o desempenho no trabalho e nas atividades diárias. Além disso, a conscientização sobre a importância da alimentação saudável tem promovido mudanças no estilo de vida, incentivando escolhas mais saudáveis e sustentáveis. Portanto, investir em uma nutrição adequada é crucial para uma vida longa e saudável.</p>
+        </div>
     </section>
+
+    <!-- Linha de separação -->
+    <div class="separator"></div>
 
     <!-- Seção Consultar Alimentos -->
     <section id="consultar-alimentos">
@@ -32,6 +38,9 @@
         <input type="text" id="search" placeholder="Digite o nome de um alimento...">
         <div id="results"></div>
     </section>
+
+    <!-- Linha de separação -->
+    <div class="separator"></div>
 
     <!-- Seção Nutricionista Parceiro -->
     <section id="nutricionista-parceiro">
@@ -42,6 +51,9 @@
         <p><strong>Email:</strong> <a href="mailto:joao.silva@nutri.com">joao.silva@nutri.com</a></p>
     </section>
 
+    <!-- Linha de separação -->
+    <div class="separator"></div>
+
     <!-- Seção Calculadora de Macronutrientes -->
     <section id="info-detalhada">
         <div id="macro-calculator">
@@ -49,22 +61,25 @@
             <form id="macro-form">
                 <label for="calorias">Calorias diárias desejadas:</label>
                 <input type="number" id="calorias" required>
-    
+
                 <label for="percent-proteinas">Percentual de Proteínas:</label>
                 <input type="number" id="percent-proteinas" value="20" required>
-    
+
                 <label for="percent-carboidratos">Percentual de Carboidratos:</label>
                 <input type="number" id="percent-carboidratos" value="50" required>
-    
+
                 <label for="percent-lipidios">Percentual de Lipídios:</label>
                 <input type="number" id="percent-lipidios" value="30" required>
-    
+
                 <button type="submit">Calcular</button>
             </form>
-    
+
             <div id="macro-results"></div>
         </div>
     </section>
+
+<!-- Linha de separação -->
+<div class="separator"></div>
 
     <footer class="footer">
         <div class="footer-content">
