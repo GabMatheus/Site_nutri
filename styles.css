@@ -213,7 +213,7 @@ body {
     text-align: center; /* Centraliza o texto */
     padding: 10px 0; /* Espaçamento interno */
     width: 1349px; /* Garante que o rodapé ocupe 100% da largura */
-    margin-bottom: -250px;
+    margin-bottom: -270px;
     position: relative; /* Permite que o rodapé se mova com o conteúdo */
     margin-top: auto; /* Empurra o rodapé para a parte inferior da tela quando o conteúdo é menor */
     margin-left: -245px;
