@@ -1,7 +1,6 @@
-/* Estilo básico do corpo */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f6f9;
+    background-color: #ecf0f1;
     color: #333;
     padding: 20px;
     max-width: 900px;
@@ -9,7 +8,6 @@ body {
     line-height: 1.6;
 }
 
-/* Título principal */
 h1 {
     color: #34495e;
     font-size: 2.5rem;
@@ -18,13 +16,12 @@ h1 {
 }
 
 .separator {
-    height: 1px; /* Altura da linha */
-    background-color: #dcdde1; /* Cor da linha */
-    margin: 30px 0; /* Margem acima e abaixo da linha */
-    width: 100%; /* Largura total da seção */
+    height: 1px;
+    background-color: #dcdde1;
+    margin: 30px 0;
+    width: 100%;
 }
 
-/* Campo de busca */
 #search {
     width: 100%;
     max-width: 600px;
@@ -44,7 +41,6 @@ h1 {
     box-shadow: 0 6px 12px rgba(26, 188, 156, 0.3);
 }
 
-/* Container dos resultados */
 #results {
     margin-top: 30px;
     display: flex;
@@ -52,7 +48,6 @@ h1 {
     gap: 20px;
 }
 
-/* Cartão de informações sobre o alimento */
 .food-info {
     background-color: #ffffff;
     padding: 20px;
@@ -66,7 +61,6 @@ h1 {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Título e textos das informações nutricionais */
 .food-info h3 {
     margin-bottom: 15px;
     color: #16a085;
@@ -82,14 +76,12 @@ h1 {
     color: #2980b9;
 }
 
-/* Mensagem de "nenhum alimento encontrado" */
 #results p {
     font-size: 1.2rem;
     color: #e74c3c;
     text-align: center;
 }
 
-/* Responsividade */
 @media (max-width: 600px) {
     h1 {
         font-size: 2rem;
@@ -109,7 +101,6 @@ h1 {
     }
 }
 
-/* Cabeçalho fixo com navegação */
 header {
     background-color: #16a085;
     padding: 10px 0;
@@ -145,8 +136,8 @@ nav ul li a:hover {
 }
 
 section {
-    padding: 100px 20px; /* Ajuste de padding para compensar o cabeçalho fixo */
-    margin-bottom: 50px; /* Espaço entre seções */
+    padding: 100px 20px;
+    margin-bottom: 50px;
 }
 
 section h2 {
@@ -198,67 +189,64 @@ section h2 {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+    min-height: 100vh;
 }
 
 .content {
-    flex: 1; /* Faz com que a seção de conteúdo ocupe o espaço disponível */
+    flex: 1;
     padding: 20px;
 }
 
-/* Rodapé */
 .footer {
-    background-color: #16a085; /* Cor de fundo do rodapé */
-    color: #fff; /* Cor do texto */
-    text-align: center; /* Centraliza o texto */
-    padding: 10px 0; /* Espaçamento interno */
-    width: 1349px; /* Garante que o rodapé ocupe 100% da largura */
-    margin-bottom: -250px;
-    position: relative; /* Permite que o rodapé se mova com o conteúdo */
-    margin-top: auto; /* Empurra o rodapé para a parte inferior da tela quando o conteúdo é menor */
+    background-color: #16a085;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 1349px;
+    margin-bottom: -270px;
+    position: relative;
+    margin-top: auto;
     margin-left: -245px;
 }
 
 .footer-content {
-    margin: 0 auto; /* Centraliza o conteúdo */
-    font-size: 0.9em; /* Tamanho menor da fonte */
-    text-align: center; /* Centraliza todo o conteúdo */
+    margin: 0 auto;
+    font-size: 0.9em;
+    text-align: center;
     margin-left: 15px;
 }
 
 .footer-content h3,
 .footer-content h4 {
-    text-align: center; /* Centraliza os títulos h3 e h4 */
+    text-align: center;
 }
 
 .footer-copy {
-    margin-top: 280px; /* Define a margem superior */
-    text-align: center; /* Centraliza o texto, se necessário */
+    margin-top: 280px;
+    text-align: center;
 }
 
 .footer-content p {
-    margin: 5px 0; /* Margem opcional para espaçamento */
+    margin: 5px 0;
 }
 
-#inicio {
-    display: flex; /* Usando Flexbox para alinhar a imagem e o texto lado a lado */
-    align-items: flex-start; /* Alinha os itens no topo */
-    position: relative; /* Para usar o position absoluto na imagem e texto */
-}
-
-#inicio img {
-    width: 400px; /* Tamanho da imagem */
-    height: 400px; /* Altura da imagem */
-    margin-left: -190px; /* Ajusta a posição horizontal da imagem */
-    margin-top: -40px; /* Ajusta a posição vertical da imagem */
-    position: absolute; /* Faz a imagem sair do fluxo do documento */
+#inicio img,
+#nutricionista-parceiro img {
+    width: 300px;
+    height: 300px;
+    margin-left: -190px;
+    margin-top: 10px;
+    position: absolute;
+    border: 5px solid #16a085;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #inicio .texto {
-    flex: 1; /* O texto ocupará o restante do espaço ao lado da imagem */
-    margin-left: 220px; /* Deixa um espaço para a imagem à esquerda */
-    text-align: center; /* Centraliza o texto */
-    margin-top: 50px; /* Ajusta a margem superior para dar espaço */
+    flex: 1;
+    margin-left: 220px;
+    text-align: center;
+    margin-top: 50px;
 }
 
 #inicio h1 {
@@ -269,21 +257,58 @@ body {
 }
 
 #inicio p {
-    margin-top: 10px; /* Margem acima do parágrafo */
+    margin-top: 10px;
     font-size: 1rem;
     color: #333;
-    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    line-height: 1.6;
 }
 
-
 .logo {
-    width: 90px; /* Define a largura */
-    height: auto; /* Mantém a proporção */
-    margin-right: 30px; /* Espaçamento entre a logo e a navegação */
+    width: 90px;
+    height: auto;
+    margin-right: 30px;
     margin-left: 48px;
     margin-top: -10px;
-    display: inline-block; /* Mantém a logo na mesma linha que os itens do menu */
-    vertical-align: middle; /* Alinha verticalmente no meio */
+    display: inline-block;
+    vertical-align: middle;
     position: absolute;
+}
 
+#nutricionista-parceiro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+#nutricionista-parceiro img2 {
+    width: 300px;
+    height: 300px;
+    margin-left: -190px;
+    margin-top: 10px;
+    position: absolute;
+    border: 5px solid #16a085;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#nutricionista-parceiro .texto {
+    flex: 1;
+    margin-left: 220px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#nutricionista-parceiro h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #34495e;
+    margin-top: -70px;
+}
+
+#nutricionista-parceiro p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
 }

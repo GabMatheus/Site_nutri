@@ -109,8 +109,6 @@ document.getElementById('macro-form').addEventListener('submit', function(e) {
     `;
 });
 
-//-----------------------------------//
-
 const navLinks = document.querySelectorAll('nav ul li a');
 
 // Adiciona um evento de clique a cada link
@@ -128,3 +126,5 @@ navLinks.forEach(link => {
         });
     });
 });
+
+
