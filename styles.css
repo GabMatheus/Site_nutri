@@ -198,7 +198,6 @@ body {
 }
 
 .footer {
-<<<<<<< HEAD
     background-color: #16a085;
     color: #fff;
     text-align: center;
@@ -207,16 +206,6 @@ body {
     margin-bottom: -270px;
     position: relative;
     margin-top: auto;
-=======
-    background-color: #16a085; /* Cor de fundo do rodapé */
-    color: #fff; /* Cor do texto */
-    text-align: center; /* Centraliza o texto */
-    padding: 10px 0; /* Espaçamento interno */
-    width: 1349px; /* Garante que o rodapé ocupe 100% da largura */
-    margin-bottom: -270px;
-    position: relative; /* Permite que o rodapé se mova com o conteúdo */
-    margin-top: auto; /* Empurra o rodapé para a parte inferior da tela quando o conteúdo é menor */
->>>>>>> 052b51407d20632aa581bca11aedbf36494bbdb3
     margin-left: -245px;
 }
 
