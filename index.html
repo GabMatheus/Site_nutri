@@ -3,103 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutrição Alimentar</title>
+    <title>Nutrição Alimentar & Fitness</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
-        <nav>
-            <img src="./img/logo.png" alt="Logo do Site" class="logo">
-            <ul>
+        <nav class="nav-container">
+            <div class="logo-area">
+                <img src="./img/logo.png" alt="Logo do Site" class="logo">
+            </div>
+            <button class="menu-toggle" id="botaoMenuMobile" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="menuPrincipal">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#consultar-alimentos">Consultar Alimentos</a></li>
-                <li><a href="#nutricionista-parceiro">Nutricionista Parceiro</a></li>
-                <li><a href="#info-detalhada">Calculadora de macros</a></li>
+                <li><a href="#nutricionista-parceiro">Nutricionista</a></li>
+                <li><a href="#calculadoras-section">Calculadoras</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Seção Início -->
-    <section id="inicio">
-        <img src="./img/inicio.png" alt="inicio" class="img1">
-        <div class="texto">
-            <h1>A importância da nutrição atualmente</h1>
-            <p>A nutrição alimentar desempenha um papel fundamental na saúde e bem-estar das pessoas nos dias de hoje. Com a crescente disponibilidade de alimentos processados e a vida agitada, muitas pessoas negligenciam a qualidade da sua alimentação. Uma dieta equilibrada é essencial para prevenir doenças crônicas, como diabetes e hipertensão, além de contribuir para o fortalecimento do sistema imunológico. A nutrição adequada também está ligada ao aumento da energia e da produtividade, impactando positivamente o desempenho no trabalho e nas atividades diárias. Além disso, a conscientização sobre a importância da alimentação saudável tem promovido mudanças no estilo de vida, incentivando escolhas mais saudáveis e sustentáveis. Portanto, investir em uma nutrição adequada é crucial para uma vida longa e saudável.</p>
-        </div>
-    </section>
+    <main class="main-content">
 
-    <!-- Linha de separação -->
-    <div class="separator"></div>
+        <section id="inicio" class="section-card">
+            <div class="section-grid">
+                <div class="image-wrapper">
+                    <img src="./img/inicio.png" alt="Nutrição Saudável" class="side-img">
+                </div>
+                <div class="texto">
+                    <h1>A importância da nutrição atualmente</h1>
+                    <p>A nutrição alimentar desempenha um papel fundamental na saúde e bem-estar das pessoas nos dias de hoje. Com a crescente disponibilidade de alimentos processados e a vida agitada, muitas pessoas negligenciam a qualidade da sua alimentação. Uma dieta equilibrada é essencial para prevenir doenças crônicas, como diabetes e hipertensão, além de contribuir para o fortalecimento do sistema imunológico.</p>
+                    <p>A nutrição adequada também está ligada ao aumento da energia e da produtividade, impactando positivamente o desempenho no trabalho e das atividades diárias. Investir em uma nutrição adequada é crucial para uma vida longa, saudável e ativa.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Seção Consultar Alimentos -->
-    <section id="consultar-alimentos">
-        <h2>Consultar Alimentos</h2>
-        <input type="text" id="search" placeholder="Digite o nome de um alimento...">
-        <div id="results"></div>
-    </section>
+        <div class="separator"></div>
 
-    <!-- Linha de separação -->
-    <div class="separator"></div>
+        <section id="consultar-alimentos" class="section-card">
+            <h2><i class="fas fa-apple-alt"></i> Consultar Alimentos</h2>
+            <p class="section-subtitle">Consulte a tabela nutricional oficial de forma rápida.</p>
+            <div class="search-container">
+                <input type="text" id="campoBusca" placeholder="Digite o nome de um alimento...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <div id="blocoResultados" class="results-grid"></div>
+        </section>
 
-    <!-- Seção Nutricionista Parceiro -->
-    <section id="nutricionista-parceiro">
-        <img src="./img/onofre_nutri2.png" alt="nutricionista" class="img2">
-        <div class="texto">
-            <h2>Nutricionista Parceiro</h2>
-            <p>Formado pela Universidade Federal de Viçosa e um grande entusiasta e profissional focado na área de nutrição esportiva que pode te ajudar a obter os melhores resultados. Entre em contato com nosso nutricionista parceiro:</p>
-            <p><strong>Nome:</strong> Dr. Onofre Galvão</p>
-            <p><strong>Telefone:</strong> (34) 99124-4049</p>
-            <p><strong>Email:</strong> <a href="mailto:onofregalvaonutricionista@gmail.com">onofregalvaonutricionista@gmail.com</a></p>
-        </div>
-    </section>
+        <div class="separator"></div>
 
-    <!-- Linha de separação -->
-    <div class="separator"></div>
+        <section id="nutricionista-parceiro" class="section-card">
+            <div class="section-grid reverse">
+                <div class="texto">
+                    <h2>Nutricionista Parceiro</h2>
+                    <p>Formado pela Universidade Federal de Viçosa, nosso parceiro é um grande entusiasta focado na área de nutrição esportiva e clínica que pode te ajudar a obter os melhores resultados físicos e de saúde.</p>
+                    
+                    <div class="contact-card">
+                        <p><strong><i class="fas fa-user-md"></i> Nome:</strong> Dr. Onofre Galvão</p>
+                        <p><strong><i class="fas fa-phone-alt"></i> Telefone:</strong> (34) 99124-4049</p>
+                        <p><strong><i class="fas fa-envelope"></i> Email:</strong> <a href="mailto:onofregalvaonutricionista@gmail.com">onofregalvaonutricionista@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="./img/onofre_nutri2.png" alt="Dr. Onofre Galvão" class="side-img">
+                </div>
+            </div>
+        </section>
 
-    <!-- Seção Calculadora de Macronutrientes -->
-    <section id="info-detalhada">
-        <div id="macro-calculator">
-            <h2>Calculadora de Macronutrientes</h2>
-            <form id="macro-form">
-                <label for="calorias">Calorias diárias desejadas:</label>
-                <input type="number" id="calorias" required>
+        <div class="separator"></div>
 
-                <label for="percent-proteinas">Percentual de Proteínas:</label>
-                <input type="number" id="percent-proteinas" value="20" required>
+        <section id="calculadoras-section" class="section-card">
+            <h2 class="text-center"><i class="fas fa-calculator"></i> Calculadoras Nutricionais</h2>
+            <p class="section-subtitle text-center">Navegue pelas abas e descubra suas métricas de saúde instantaneamente.</p>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" id="btnAnterior">&#10094;</button>
+                <button class="carousel-btn next-btn" id="btnProximo">&#10095;</button>
 
-                <label for="percent-carboidratos">Percentual de Carboidratos:</label>
-                <input type="number" id="percent-carboidratos" value="50" required>
+                <div class="carousel-window">
+                    <div class="carousel-track" id="trilhoCarrossel">
+                        
+                        <div class="carousel-slide active">
+                            <h3><i class="fas fa-pie-chart"></i> 1. Macronutrientes</h3>
+                            <form id="formularioMacro" class="calc-form">
+                                <div class="form-group">
+                                    <label for="calorias">Calorias diárias desejadas (kcal):</label>
+                                    <input type="number" id="calorias" placeholder="Ex: 2000" required>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="porcentagemProteina">% Proteínas:</label>
+                                        <input type="number" id="porcentagemProteina" value="20" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="porcentagemCarbo">% Carboidratos:</label>
+                                        <input type="number" id="porcentagemCarbo" value="50" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="porcentagemGordura">% Lipídios:</label>
+                                        <input type="number" id="porcentagemGordura" value="30" required>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-calc">Calcular Macronutrientes</button>
+                            </form>
+                            <div id="resultadoMacro" class="calc-result"></div>
+                        </div>
 
-                <label for="percent-lipidios">Percentual de Lipídios:</label>
-                <input type="number" id="percent-lipidios" value="30" required>
+                        <div class="carousel-slide">
+                            <h3><i class="fas fa-weight"></i> 2. Índice de Massa Corporal (IMC)</h3>
+                            <form id="formularioImc" class="calc-form">
+                                <div class="form-group">
+                                    <label for="pesoImc">Peso (kg):</label>
+                                    <input type="number" step="0.1" id="pesoImc" placeholder="Ex: 75.5" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="alturaImc">Altura (metros):</label>
+                                    <input type="number" step="0.01" id="alturaImc" placeholder="Ex: 1.75" required>
+                                </div>
+                                <button type="submit" class="btn-calc">Calcular IMC</button>
+                            </form>
+                            <div id="resultadoImc" class="calc-result"></div>
+                        </div>
 
-                <button type="submit">Calcular</button>
-            </form>
+                        <div class="carousel-slide">
+                            <h3><i class="fas fa-tint"></i> 3. Consumo de Água</h3>
+                            <form id="formularioAgua" class="calc-form">
+                                <div class="form-group">
+                                    <label for="pesoAgua">Seu Peso Atual (kg):</label>
+                                    <input type="number" id="pesoAgua" placeholder="Ex: 70" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="atividadeAgua">Pratica atividade física intensa diária?</label>
+                                    <select id="atividadeAgua">
+                                        <option value="nao">Não ou moderada</option>
+                                        <option value="sim">Sim, intensa (+ de 1h)</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn-calc">Calcular Água Alvo</button>
+                            </form>
+                            <div id="resultadoAgua" class="calc-result"></div>
+                        </div>
 
-            <div id="macro-results"></div>
-        </div>
-    </section>
+                        <div class="carousel-slide">
+                            <h3><i class="fas fa-fire"></i> 4. Balanço Calórico Estimado</h3>
+                            <form id="formularioBalanco" class="calc-form">
+                                <div class="form-group">
+                                    <label for="gastoMetabolico">Gasto Calórico Total Estimado (GET em kcal):</label>
+                                    <input type="number" id="gastoMetabolico" placeholder="Ex: 2400" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="objetivoTreino">Qual é o seu objetivo?</label>
+                                    <select id="objetivoTreino">
+                                        <option value="deficit">Perda de peso (Déficit Calórico)</option>
+                                        <option value="superavit">Ganho de massa (Superávit Calórico)</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn-calc">Calcular Metas Calóricas</button>
+                            </form>
+                            <div id="resultadoBalanco" class="calc-result"></div>
+                        </div>
 
-<!-- Linha de separação -->
-<div class="separator"></div>
+                    </div>
+                </div>
+
+                <div class="carousel-indicators" id="containerBolinhas">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <footer class="footer">
-        <div class="footer-content">
-            <h3>Sobre o Site</h3>
-            <p>Este site fornece informações nutricionais e ferramentas para auxiliar na sua alimentação e saúde.</p>
-            <h4>Contato</h4>
-            <div class="contact-section">
+        <div class="footer-grid">
+            <div class="footer-box">
+                <h3>Sobre o Site</h3>
+                <p>Informações nutricionais validadas e ferramentas práticas para otimizar sua rotina alimentar e treinos.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Contato & Suporte</h3>
                 <p><i class="fas fa-envelope"></i> <a href="mailto:gab_matheus@hotmail.com">gab_matheus@hotmail.com</a></p>
+                <p><i class="fas fa-file-alt"></i> <a href="https://h2n4t1rc.forms.app/feedback-formulario-site-nutricional" target="_blank">Formulário de Avaliação</a></p>
             </div>
-            <div class="link-form">
-                <h4>Formulário</h4>
-                <p><a href="https://h2n4t1rc.forms.app/feedback-formulario-site-nutricional" target="_blank">Responda nosso formulário para nos ajudar a melhorar o site</a></p>
+            <div class="footer-box">
+                <h3>Redes Sociais</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/oliveiragm/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/GabMatheus" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                </div>
             </div>
-            <h4>Redes Sociais</h4>
-            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/oliveiragm/" target="_blank">LinkedIn</a></p>
-            <p><i class="fab fa-github"></i> <a href="https://github.com/GabMatheus" target="_blank">github.com/GabMatheus</a></p>
-            <p class="footer-copy">&copy; 2024 Gabriel Matheus Oliveira. Todos os direitos reservados.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Gabriel Matheus Oliveira. Todos os direitos reservados.</p>
         </div>
     </footer>
 

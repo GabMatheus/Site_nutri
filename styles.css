@@ -1,185 +1,6 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #ecf0f1;
-    color: #333;
-    padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-h1 {
-    color: #34495e;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.separator {
-    height: 1px;
-    background-color: #dcdde1;
-    margin: 30px 0;
-    width: 100%;
-}
-
-#search {
-    width: 100%;
-    max-width: 600px;
-    padding: 15px;
-    font-size: 1rem;
-    margin: 0 auto 20px auto;
-    display: block;
-    border: 1px solid #dcdde1;
-    border-radius: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-}
-
-#search:focus {
-    outline: none;
-    border-color: #1abc9c;
-    box-shadow: 0 6px 12px rgba(26, 188, 156, 0.3);
-}
-
-#results {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.food-info {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.food-info:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-}
-
-.food-info h3 {
-    margin-bottom: 15px;
-    color: #16a085;
-    font-size: 1.5rem;
-}
-
-.food-info p {
-    margin: 5px 0;
-    font-size: 1rem;
-}
-
-.food-info strong {
-    color: #2980b9;
-}
-
-#results p {
-    font-size: 1.2rem;
-    color: #e74c3c;
-    text-align: center;
-}
-
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    #search {
-        font-size: 0.9rem;
-        padding: 10px;
-    }
-
-    .food-info {
-        padding: 15px;
-    }
-
-    .food-info h3 {
-        font-size: 1.2rem;
-    }
-}
-
-header {
-    background-color: #16a085;
-    padding: 10px 0;
-    position: fixed;
-    margin-left: -245px;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    border-radius: 25px;
-    transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #1abc9c;
-}
-
-section {
-    padding: 100px 20px;
-    margin-bottom: 50px;
-}
-
-section h2 {
-    font-size: 2rem;
-    color: #34495e;
-}
-
-#macro-calculator {
-    background-color: #ecf0f1;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px 0;
-}
-
-#macro-calculator label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-#macro-calculator input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-}
-
-#macro-calculator button {
-    padding: 10px 15px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#macro-calculator button:hover {
-    background-color: #2980b9;
-}
-
-#macro-results {
-    margin-top: 20px;
-}
-
+/* ==========================================================================
+   1. REGRAS GERAIS E CONFIGURAÇÃO DA PÁGINA
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -187,129 +8,627 @@ section h2 {
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7f8;
+    color: #333333;
+    line-height: 1.6;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.content {
-    flex: 1;
-    padding: 20px;
-}
-
-.footer {
-    background-color: #16a085;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    width: 1349px;
-    margin-bottom: -270px;
-    position: relative;
-    margin-top: auto;
-    margin-left: -245px;
-}
-
-.footer-content {
-    margin: 0 auto;
-    font-size: 0.9em;
-    text-align: center;
-    margin-left: 15px;
-}
-
-.footer-content h3,
-.footer-content h4 {
-    text-align: center;
-}
-
-.footer-copy {
-    margin-top: 280px;
-    text-align: center;
-}
-
-.footer-content p {
-    margin: 5px 0;
-}
-
-#inicio img,
-#nutricionista-parceiro img {
-    width: 300px;
-    height: 300px;
-    margin-left: -190px;
-    margin-top: 10px;
-    position: absolute;
-    border: 5px solid #16a085;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#inicio .texto {
-    flex: 1;
-    margin-left: 220px;
-    text-align: center;
-    margin-top: 50px;
-}
-
-#inicio h1 {
-    margin: 0;
+/* Títulos principais do site */
+h1 {
     font-size: 2rem;
-    color: #34495e;
-    margin-top: -70px;
+    color: #27ae60;
+    margin-bottom: 15px;
+    font-weight: 700;
 }
 
-#inicio p {
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.6;
+h2 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.separator {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #dcdde1, transparent);
+    margin: 25px 0;
+    width: 100%;
+}
+
+
+/* ==========================================================================
+   2. TOPO DO SITE (HEADER) E MENU DE NAVEGAÇÃO
+   ========================================================================== */
+header {
+    background-color: #2c3e50;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    width: 90px;
-    height: auto;
-    margin-right: 30px;
-    margin-left: 48px;
-    margin-top: -10px;
-    display: inline-block;
-    vertical-align: middle;
-    position: absolute;
+    height: 45px;
+    width: auto;
+    display: block;
 }
 
-#nutricionista-parceiro {
+/* Menu com os links */
+.nav-menu {
+    list-style: none;
     display: flex;
+    gap: 15px;
+}
+
+.nav-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Destaque ao passar o mouse nos links */
+.nav-menu li a:hover {
+    background-color: #27ae60;
+}
+
+/* Botão do menu hambúrguer */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+/* ==========================================================================
+   3. ESTRUTURA DO CONTEÚDO (CARDS E ALINHAMENTO)
+   ========================================================================== */
+.main-content {
+    flex: 1;
+    width: 100%;
+    max-width: 1000px;
+    margin: 90px auto 40px auto;
+    padding: 0 20px;
+}
+
+.section-card {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 30px;
     align-items: center;
-    justify-content: flex-start;
+}
+
+.section-grid.reverse {
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.side-img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 12px;
+    border: 4px solid #eef2f3;
+    object-fit: cover;
+}
+
+.section-subtitle {
+    color: #7f8c8d;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+
+/* ==========================================================================
+   4. SEÇÃO DA BARRA DE BUSCA DE ALIMENTOS (TABELA TACO)
+   ========================================================================== */
+.search-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+#campoBusca {
+    width: 100%;
+    padding: 14px 25px 14px 50px;
+    font-size: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 30px;
+    background-color: #fafbfc;
+    transition: all 0.3s ease;
+}
+
+#campoBusca:focus {
+    outline: none;
+    border-color: #27ae60;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.15);
+}
+
+.search-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #7f8c8d;
+}
+
+/* Grid onde os resultados dos alimentos vão aparecer */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
 }
 
-#nutricionista-parceiro img2 {
-    width: 300px;
-    height: 300px;
-    margin-left: -190px;
-    margin-top: 10px;
-    position: absolute;
-    border: 5px solid #16a085;
+/* Cardzinho individual de cada alimento retornado */
+.food-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #eef2f3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.food-info:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.food-info h3 {
+    font-size: 1.15rem;
+    color: #27ae60;
+    border-bottom: 1px solid #f1f2f6;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.food-info p {
+    font-size: 0.9rem;
+    margin: 4px 0;
+}
+
+
+/* ==========================================================================
+   5. CARD DE CONTATO (NUTRICIONISTA PARCEIRO)
+   ========================================================================== */
+.contact-card {
+    background-color: #f8f9fa;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #27ae60;
+    margin-top: 15px;
+    text-align: left;
 }
 
-#nutricionista-parceiro .texto {
-    flex: 1;
-    margin-left: 220px;
-    text-align: center;
-    margin-top: 50px;
+.contact-card p { 
+    margin-bottom: 8px; 
 }
 
-#nutricionista-parceiro h2 {
-    margin: 0;
-    font-size: 2rem;
-    color: #34495e;
-    margin-top: -70px;
+.contact-card a {
+    color: #27ae60;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-#nutricionista-parceiro p {
-    margin-top: 10px;
+
+/* ==========================================================================
+   6. ESTRUTURA DO CARROSSEL DE CALCULADORAS
+   ========================================================================== */
+.carousel-container {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Janela que esconde os slides que estão fora da tela */
+.carousel-window {
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background-color: #fafbfc;
+}
+
+/* O trilho comprido que o JS arrasta para os lados */
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+}
+
+/* Cada bloco de calculadora individual dentro do carrossel */
+.carousel-slide {
+    min-width: 100%;
+    padding: 30px;
+    opacity: 0.3;
+    transition: opacity 0.4s ease;
+}
+
+/* Quando o slide ganha foco, ele clareia */
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.carousel-slide h3 {
+    font-size: 1.25rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Formulários internos do carrossel */
+.calc-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.calc-form label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.calc-form input, .calc-form select {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 0.95rem;
+}
+
+.calc-form input:focus, .calc-form select:focus {
+    outline: none;
+    border-color: #27ae60;
+}
+
+/* Botões de calcular */
+.btn-calc {
+    background-color: #27ae60;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
     font-size: 1rem;
-    color: #333;
-    line-height: 1.6;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
 }
 
+.btn-calc:hover {
+    background-color: #218c4f;
+}
+
+.calc-result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f8f0;
+    border-radius: 8px;
+    border: 1px solid #d4edda;
+    display: none; 
+}
+
+/* Setas de navegação esquerda/direita */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background 0.2s;
+}
+
+.carousel-btn:hover { 
+    background-color: #27ae60; 
+}
+
+.prev-btn { left: -5px; }
+.next-btn { right: -5px; }
+
+/* Bolinhas indicadoras embaixo do carrossel */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.carousel-indicators .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #cbd5e1;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Estilo da bolinha que representa o slide ativo atual */
+.carousel-indicators .dot.active {
+    background-color: #27ae60;
+    width: 24px;
+    border-radius: 5px;
+}
+
+
+/* ==========================================================================
+   7. RODAPÉ (FOOTER)
+   ========================================================================== */
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 40px 20px 20px 20px;
+    margin-top: auto;
+}
+
+.footer-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.footer-box h3 { 
+    color: #2ecc71;
+    margin-bottom: 15px; 
+    font-size: 1.1rem;
+}
+
+.footer-box p, .footer-box a { 
+    color: #bdc3c7; 
+    font-size: 0.9rem; 
+    text-decoration: none;
+}
+
+.footer-box a:hover { 
+    color: #ffffff; 
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #34495e;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+}
+
+/* Elementos auxiliares de texto */
+.text-center { text-align: center; }
+
+
+/* ==========================================================================
+   8. RESPONSIVIDADE (CELULARES, TABLETS E TOTENS)
+   ========================================================================== */
+
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.35rem;
+    }
+
+    .main-content {
+        margin-top: 80px;
+        padding: 0 12px;
+    }
+
+    .section-card {
+        padding: 20px 15px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    .section-grid, .section-grid.reverse {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .image-wrapper {
+        order: -1;
+    }
+
+    .side-img {
+        max-width: 200px;
+    }
+
+    .carousel-container {
+        padding: 0;
+    }
+
+    .carousel-slide {
+        padding: 15px 10px;
+    }
+
+    .carousel-btn {
+        display: none; /* Esconde setas para evitar quebrar o layout; navega pelas bolinhas */
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    /* Afastamento dos links do rodapé no mobile */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .main-content {
+        max-width: 90%;
+        margin-top: 85px;
+    }
+
+    .section-card {
+        padding: 25px;
+    }
+
+    /* Mantém as duas colunas, mas ajusta a proporção para não espremer */
+    .section-grid, .section-grid.reverse {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 20px;
+    }
+
+    .side-img {
+        max-width: 240px;
+    }
+
+    .carousel-container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        background-color: #2c3e50;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        gap: 10px;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu li a {
+        display: block;
+        padding: 12px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Alarga levemente o limite do site para telas maiores */
+    .main-content {
+        max-width: 1140px;
+    }
+
+    #campoBusca {
+        padding: 18px 25px 18px 60px;
+        font-size: 1.15rem;
+    }
+
+    .search-icon {
+        left: 25px;
+        font-size: 1.2rem;
+    }
+
+    /* Aumenta a área de clique dos botões e campos do formulário no totem */
+    .calc-form input, 
+    .calc-form select, 
+    .btn-calc {
+        padding: 15px;
+        font-size: 1.05rem;
+    }
+
+    .carousel-btn {
+        width: 46px;
+        height: 46px;
+        font-size: 1.2rem;
+    }
+    
+    .nav-container {
+        padding: 15px 20px;
+    }
+    
+    .nav-menu li a {
+        font-size: 1.05rem;
+        padding: 10px 22px;
+    }
+}
