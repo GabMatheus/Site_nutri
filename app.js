@@ -292,10 +292,10 @@ if (formularioBalanco) {
 
         if (objetivo === 'deficit') {
             metaCalorica = gastoTotal - 400;
-            explicacao = 'Para um emagrecimento saudável, aplicamos um déficit de 400 kcal no seu gasto diário.';
+            explicacao = 'Para um emagrecimento saudável, aplicamos um déficit de 400 kcal no seu gasto diário. (Consulte um nutricionista)';
         } else {
             metaCalorica = gastoTotal + 300;
-            explicacao = 'Para ganho de massa muscular, adicionamos 300 kcal ao seu gasto diário.';
+            explicacao = 'Para ganho de massa muscular, adicionamos 300 kcal ao seu gasto diário. (Consulte um nutricionista)';
         }
 
         const divResultado = document.getElementById('resultadoBalanco');

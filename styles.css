@@ -1,6 +1,4 @@
-/* ==========================================================================
-   1. REGRAS GERAIS E CONFIGURAÇÃO DA PÁGINA
-   ========================================================================== */
+/* 1. REGRAS GERAIS E CONFIGURAÇÃO DA PÁGINA */
 * {
     margin: 0;
     padding: 0;
@@ -46,9 +44,7 @@ h3 {
 }
 
 
-/* ==========================================================================
-   2. TOPO DO SITE (HEADER) E MENU DE NAVEGAÇÃO
-   ========================================================================== */
+/* 2. TOPO DO SITE (HEADER) E MENU DE NAVEGAÇÃO */
 header {
     background-color: #2c3e50;
     position: fixed;
@@ -107,9 +103,9 @@ header {
 }
 
 
-/* ==========================================================================
-   3. ESTRUTURA DO CONTEÚDO (CARDS E ALINHAMENTO)
-   ========================================================================== */
+
+
+/*   3. ESTRUTURA DO CONTEÚDO (CARDS E ALINHAMENTO) */
 .main-content {
     flex: 1;
     width: 100%;
@@ -158,10 +154,7 @@ header {
     font-size: 0.95rem;
 }
 
-
-/* ==========================================================================
-   4. SEÇÃO DA BARRA DE BUSCA DE ALIMENTOS (TABELA TACO)
-   ========================================================================== */
+/* 4. SEÇÃO DA BARRA DE BUSCA DE ALIMENTOS (TABELA TACO) */
 .search-container {
     position: relative;
     max-width: 600px;
@@ -229,9 +222,7 @@ header {
 }
 
 
-/* ==========================================================================
-   5. CARD DE CONTATO (NUTRICIONISTA PARCEIRO)
-   ========================================================================== */
+/* 5. CARD DE CONTATO (NUTRICIONISTA PARCEIRO) */
 .contact-card {
     background-color: #f8f9fa;
     padding: 20px;
@@ -252,9 +243,7 @@ header {
 }
 
 
-/* ==========================================================================
-   6. ESTRUTURA DO CARROSSEL DE CALCULADORAS
-   ========================================================================== */
+/* 6. ESTRUTURA DO CARROSSEL DE CALCULADORAS */
 .carousel-container {
     position: relative;
     max-width: 700px;
@@ -271,7 +260,7 @@ header {
     background-color: #fafbfc;
 }
 
-/* O trilho comprido que o JS arrasta para os lados */
+/* Trilho que o JS arrasta para os lados */
 .carousel-track {
     display: flex;
     transition: transform 0.4s ease-in-out;
@@ -414,9 +403,7 @@ header {
 }
 
 
-/* ==========================================================================
-   7. RODAPÉ (FOOTER)
-   ========================================================================== */
+/* 7. RODAPÉ (FOOTER) */
 footer {
     background-color: #2c3e50;
     color: #ffffff;
@@ -519,7 +506,7 @@ footer {
     }
 
     .carousel-btn {
-        display: none; /* Esconde setas para evitar quebrar o layout; navega pelas bolinhas */
+        display: none;
     }
 
     .form-row {
@@ -544,7 +531,6 @@ footer {
         padding: 25px;
     }
 
-    /* Mantém as duas colunas, mas ajusta a proporção para não espremer */
     .section-grid, .section-grid.reverse {
         grid-template-columns: 1fr 1.2fr;
         gap: 20px;
@@ -594,7 +580,6 @@ footer {
 }
 
 @media (min-width: 1200px) {
-    /* Alarga levemente o limite do site para telas maiores */
     .main-content {
         max-width: 1140px;
     }
@@ -609,7 +594,6 @@ footer {
         font-size: 1.2rem;
     }
 
-    /* Aumenta a área de clique dos botões e campos do formulário no totem */
     .calc-form input, 
     .calc-form select, 
     .btn-calc {
