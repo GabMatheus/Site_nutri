@@ -69,12 +69,12 @@ campoBusca.addEventListener('input', function () {
     }, 15000);
 });
 
-// Exibe os cards dos alimentos na tela (máximo 10 resultados)
+// Exibe os cards dos alimentos na tela (máximo 7 resultados)
 function mostrarResultadosNaTela(listaDeAlimentos) {
     if (!blocoResultados) return;
     blocoResultados.innerHTML = '';
 
-    const limite = Math.min(listaDeAlimentos.length, 10);
+    const limite = Math.min(listaDeAlimentos.length, 7);
 
     for (let i = 0; i < limite; i++) {
         const alimento = listaDeAlimentos[i];
@@ -104,16 +104,6 @@ function limparResultadosDaTela() {
     if (blocoResultados) {
         blocoResultados.innerHTML = '';
     }
-}
-
-// Menu mobile: abrir e fechar
-const botaoMenuMobile = document.getElementById('botaoMenuMobile');
-const menuPrincipal = document.getElementById('menuPrincipal');
-
-if (botaoMenuMobile && menuPrincipal) {
-    botaoMenuMobile.addEventListener('click', () => {
-        menuPrincipal.classList.toggle('show');
-    });
 }
 
 // Controle do carrossel de calculadoras
@@ -317,5 +307,15 @@ if (formularioBalanco) {
                 <p class="resultado-item resultado-explicacao">${explicacao}</p>
             `;
         }
+    });
+}
+
+// Menu mobile: abrir e fechar
+const botaoMenuMobile = document.getElementById('botaoMenuMobile');
+const menuPrincipal = document.getElementById('menuPrincipal');
+
+if (botaoMenuMobile && menuPrincipal) {
+    botaoMenuMobile.addEventListener('click', () => {
+        menuPrincipal.classList.toggle('show');
     });
 }
