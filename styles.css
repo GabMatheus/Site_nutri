@@ -244,7 +244,7 @@ header {
 
 
 /* 6. ESTRUTURA DO CARROSSEL DE CALCULADORAS */
-.carousel-container {
+.carrossel-container {
     position: relative;
     max-width: 700px;
     margin: 0 auto;
@@ -252,7 +252,7 @@ header {
 }
 
 /* Janela que esconde os slides que estão fora da tela */
-.carousel-window {
+.carrossel-window {
     overflow: hidden;
     width: 100%;
     border: 1px solid #e2e8f0;
@@ -261,14 +261,14 @@ header {
 }
 
 /* Trilho que o JS arrasta para os lados */
-.carousel-track {
+.carrossel-track {
     display: flex;
     transition: transform 0.4s ease-in-out;
     width: 100%;
 }
 
 /* Cada bloco de calculadora individual dentro do carrossel */
-.carousel-slide {
+.carrossel-slide {
     min-width: 100%;
     padding: 30px;
     opacity: 0.3;
@@ -276,11 +276,11 @@ header {
 }
 
 /* Quando o slide ganha foco, ele clareia */
-.carousel-slide.active {
+.carrossel-slide.active {
     opacity: 1;
 }
 
-.carousel-slide h3 {
+.carrossel-slide h3 {
     font-size: 1.25rem;
     border-bottom: 2px solid #e2e8f0;
     padding-bottom: 10px;
@@ -352,7 +352,7 @@ header {
 }
 
 /* Setas de navegação esquerda/direita */
-.carousel-btn {
+.carrossel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -371,7 +371,7 @@ header {
     transition: background 0.2s;
 }
 
-.carousel-btn:hover { 
+.carrossel-btn:hover { 
     background-color: #27ae60; 
 }
 
@@ -379,14 +379,14 @@ header {
 .next-btn { right: -5px; }
 
 /* Bolinhas indicadoras embaixo do carrossel */
-.carousel-indicators {
+.carrossel-indicators {
     display: flex;
     justify-content: center;
     gap: 8px;
     margin-top: 20px;
 }
 
-.carousel-indicators .dot {
+.carrossel-indicators .dot {
     width: 10px;
     height: 10px;
     background-color: #cbd5e1;
@@ -396,7 +396,7 @@ header {
 }
 
 /* Estilo da bolinha que representa o slide ativo atual */
-.carousel-indicators .dot.active {
+.carrossel-indicators .dot.active {
     background-color: #27ae60;
     width: 24px;
     border-radius: 5px;
@@ -497,15 +497,15 @@ footer {
         max-width: 200px;
     }
 
-    .carousel-container {
+    .carrossel-container {
         padding: 0;
     }
 
-    .carousel-slide {
+    .carrossel-slide {
         padding: 15px 10px;
     }
 
-    .carousel-btn {
+    .carrossel-btn {
         display: none;
     }
 
@@ -540,7 +540,7 @@ footer {
         max-width: 240px;
     }
 
-    .carousel-container {
+    .carrossel-container {
         padding: 0 20px;
     }
 }
@@ -601,7 +601,7 @@ footer {
         font-size: 1.05rem;
     }
 
-    .carousel-btn {
+    .carrossel-btn {
         width: 46px;
         height: 46px;
         font-size: 1.2rem;

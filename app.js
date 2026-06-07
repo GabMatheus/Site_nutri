@@ -112,7 +112,7 @@ let divsDoCarrossel = [];
 let botoesBolinha = [];
 
 if (trilhoCarrossel) {
-    divsDoCarrossel = Array.from(trilhoCarrossel.getElementsByClassName('carousel-slide'));
+    divsDoCarrossel = Array.from(trilhoCarrossel.getElementsByClassName('carrossel-slide'));
 }
 
 const btnAnterior = document.getElementById('btnAnterior');
@@ -223,8 +223,9 @@ if (formularioImc) {
         evento.preventDefault();
 
         const peso = parseFloat(document.getElementById('pesoImc').value);
-        const altura = parseFloat(document.getElementById('alturaImc').value);
-        const imc = peso / (altura * altura);
+        const alturaCm = parseFloat(document.getElementById('alturaImc').value);
+        const alturaM = alturaCm / 100;
+        const imc = peso / (alturaM * alturaM);
 
         let classificacao = '';
         if (imc < 18.5) {
